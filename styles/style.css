@@ -1,1 +1,320 @@
 /* место для вашего кода */
+* {
+    font-family: "Raleway", sans-serif;
+}
+
+
+header {
+    width: 1100px;
+    height: 293px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    
+}
+
+.navigation {
+    margin-left: 50px;
+    display: flex;
+    justify-content: start;
+    gap: 7px;
+    width: 391px;
+    height: 22px;
+}
+
+.navigation-item {
+    font-size: 18px;
+    text-decoration: underline;
+    text-transform: lowercase;
+}
+
+.navigation-item-0 {
+    font-size: 18px;
+    text-transform: lowercase;
+}
+
+
+.logo {
+    margin-left: 36px;
+    width: 148px;
+    height: 105px;
+}
+
+.contacts {
+    margin-left: 185px;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
+.contact-item {
+    font-size: 18px;
+    min-width: 0;
+    max-width: 236px;
+    overflow-wrap: break-word;
+}
+
+.cover {
+    position: relative;
+    display: inline-block;
+}
+
+.cover-image {
+    width: 1100px;
+    height: 757px;
+    z-index: 0;
+    object-fit: cover;
+    object-position: center;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.line-1,
+.line-2,
+.line-3 {
+    position: absolute;
+    text-transform: uppercase;
+    letter-spacing: 30%;
+    line-height: 115px;
+    font-weight: 700;
+    color: white;
+    font-size: 100px;
+}
+
+.line-1 {
+    top: 165px;
+    left: 50px;
+}
+
+.line-2 {
+    top: 300px;
+    left: 380px;
+}
+
+.line-3 {
+    top: 435px;
+    left: 663px;
+}
+
+.description {
+    position: absolute;
+    width: 1000px;
+    top: 656px;
+    left: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.line-description {
+    color: white;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 28px;
+    text-transform: uppercase;
+    word-spacing: 13px;
+    font-style: normal;
+    letter-spacing: 0%;
+}
+
+.button {
+    width: 256px;
+    height: 51px;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 22px;
+    border: 1px solid white;
+}
+
+.lots {
+    width: 1052px;
+    height: 723px;
+    margin: 180px 0 0 24px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.lots-title {
+    padding-inline: 40px;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.lots-description {
+    padding-inline: 40px;
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    width: 100%;
+}
+
+.card {
+    position: relative;
+    flex: 1;
+    min-width: 0;
+    height: 596px;
+    overflow: hidden;
+}
+
+.card-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: 0;
+}
+
+.card-title,
+.card-text {
+    position: absolute;
+    z-index: 1;
+    width: 254px;
+    left: 40px;
+    right: 16px;
+    color: white;
+    line-height: 120%;
+    z-index: 2;
+}
+
+.card-title {
+    top: 48px;
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.card-text {
+    bottom: 48px;
+    font-size: 20px;
+}
+
+.card-cover {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.about {
+    width: 1052px;
+    height: 595px;
+    margin-top: 120px;
+    margin-left: 24px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.about-logo {
+    width: 240px;
+    height: 240px;
+    margin-left: 47px;
+    margin-top: 35px;
+}
+
+.about-logo-inside {
+    position: relative;
+    width: 240px;
+    height: 240px;
+}
+
+.about-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 148px;
+    height: 114px;
+    z-index: 1;
+}
+
+.logo-circle {
+    position: absolute;
+    z-index: 0;
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    background: black;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 72px;
+    margin-top: 133px;
+}
+
+.about-title {
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 3px;
+    margin-bottom: 100px;
+}
+
+.about-description {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 24px;
+}
+
+footer {
+    width: 100%;
+    height: 180px;
+    margin-top: 180px;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-contacts {
+    margin-left: 50px;
+}
+
+.footer-navigation {
+    margin-left: 154px;
+    display: flex;
+    gap: 1px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.socials {
+    margin-left: 177px;
+    width: 240px;
+    gap: 48px;
+    display: flex;
+    align-items: space-between;
+    flex-direction: row;
+}
+
+.social-image {
+    width: 48px;
+    height: 48px;
+}
