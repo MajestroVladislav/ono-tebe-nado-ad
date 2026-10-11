@@ -183,7 +183,6 @@ header {
 .card-title,
 .card-text {
   position: absolute;
-  z-index: 1;
   width: 254px;
   left: 40px;
   right: 16px;
